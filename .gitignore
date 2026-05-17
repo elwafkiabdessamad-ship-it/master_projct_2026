@@ -2,7 +2,7 @@
 master2026/
 
 # Large data files
-data/*.csv
+# data/*.csv
 data/*.xlsx
 
 # Trained models (large binaries)
