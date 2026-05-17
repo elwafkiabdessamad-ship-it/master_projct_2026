@@ -1,0 +1,36 @@
+# Conda environment
+master2026/
+
+# Large data files
+data/*.csv
+data/*.xlsx
+
+# Trained models (large binaries)
+models/*.pkl
+
+# Generated figures
+figures/
+
+# Reference papers
+Articles/
+
+# Word docs / project briefs
+*.docx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo

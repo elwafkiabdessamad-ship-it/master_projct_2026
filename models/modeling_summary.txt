@@ -1,0 +1,15 @@
+QSAR Modeling Summary
+==================================================
+Dataset: 2303 molecules
+Target: log_LC50
+Features after filtering: 513 (from 2167)
+  - Variance filter (threshold=0.01): removed 1633 features
+  - Correlation filter (|r|>0.95): removed 21 features
+Train/test split: 80/20 (random_state=42)
+
+Best model: XGBoost
+  Test R²:  0.5093
+  Test RMSE: 0.9180
+  Test MAE:  0.6422
+
+All models saved to: models/
