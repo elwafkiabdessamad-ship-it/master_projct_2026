@@ -35,7 +35,7 @@ def save_classical_models(data_csv, out_name):
     df = df[~meta].reset_index(drop=True)
     df['mol'] = df['SMILES'].apply(lambda s: Chem.MolFromSmiles(s) if s else None)
     df = df.dropna(subset=['mol']).reset_index(drop=True)
-    df['toxic'] = (df['log_LC50'] > 1.0).astype(int)
+    df['toxic'] = (df['log_LC50'] < 1.0).astype(int)
     print(f"Molecules: {len(df)} | Toxic: {df['toxic'].sum()} ({df['toxic'].mean()*100:.1f}%)")
 
     from sklearn.model_selection import train_test_split
